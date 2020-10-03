@@ -11,4 +11,8 @@ public interface RoleDao {
     void save(Role role);
 
     List<Role> findRoleByUserId(Long id);
+
+    void delRoleUserRe(Long roleId);
+
+    void del(Long roleId);
 }

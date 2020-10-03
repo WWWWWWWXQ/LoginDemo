@@ -36,4 +36,16 @@ public class RoleDaoImpl implements RoleDao {
                 , new BeanPropertyRowMapper<Role>(Role.class), id);
         return roleList;
     }
+
+    @Override
+    public void delRoleUserRe(Long roleId) {
+        jdbcTemplate.update("delete from sys_user_role where roleId = ? ", roleId);
+    }
+
+    @Override
+    public void del(Long roleId) {
+        jdbcTemplate.update("delete from sys_role where id = ?", roleId);
+    }
+
+
 }
