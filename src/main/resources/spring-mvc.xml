@@ -30,4 +30,14 @@
             <bean class="com.wxq.interceptor.PrivilegeInterceptor"/>
         </mvc:interceptor>
     </mvc:interceptors>
+
+    <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+<!--        <property name="defaultErrorView" value="error"/>-->
+        <property name="exceptionMappings">
+            <map>
+                <entry key="org.springframework.dao.EmptyResultDataAccessException" value="error"/>
+            </map>
+        </property>
+
+    </bean>
 </beans>
