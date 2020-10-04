@@ -59,7 +59,7 @@ public class UserController {
         User user = userService.login(username, password);
         if (user != null){
             session.setAttribute("user", user);
-            return "redirect:/index.jsp";
+            return "redirect:/pages/main.jsp";
         }
         return "redirect:/login.jsp";
 

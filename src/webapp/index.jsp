@@ -10,7 +10,7 @@
 
 <body>
 	<%
-		response.sendRedirect(request.getContextPath()+"/pages/main.jsp");
+		response.sendRedirect(request.getContextPath()+"/login.jsp");
 	%>
 </body>
 </html>
