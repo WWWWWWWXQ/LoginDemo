@@ -22,4 +22,12 @@
     <mvc:default-servlet-handler/>
 
     <context:component-scan base-package="com.wxq.controller"/>
+
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <mvc:exclude-mapping path="/user/login"/>
+            <bean class="com.wxq.interceptor.PrivilegeInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
 </beans>

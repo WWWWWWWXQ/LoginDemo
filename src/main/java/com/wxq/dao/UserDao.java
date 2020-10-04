@@ -16,6 +16,5 @@ public interface UserDao {
     void del(Long userId);
 
 
-
-
+    User findByUsernameAndPassword(String username, String password);
 }
