@@ -36,6 +36,7 @@
         <property name="exceptionMappings">
             <map>
                 <entry key="org.springframework.dao.EmptyResultDataAccessException" value="error"/>
+                <entry key="java.lang.NullPointerException" value="missingInfo"/>
             </map>
         </property>
 

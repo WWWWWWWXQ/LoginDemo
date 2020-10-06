@@ -15,6 +15,7 @@ import java.util.List;
 @Controller
 public class RoleController {
 
+
     @Autowired
     private RoleService roleService;
 
@@ -22,7 +23,6 @@ public class RoleController {
     public String save(Role role){
         roleService.save(role);
         return "redirect:/role/list";
-
     }
 
     @RequestMapping("/del/{roleId}")
@@ -30,7 +30,6 @@ public class RoleController {
         roleService.del(roleId);
         return "redirect:/role/list";
     }
-
 
 
     @RequestMapping("/list")

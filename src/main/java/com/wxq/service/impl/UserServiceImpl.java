@@ -5,9 +5,11 @@ import com.wxq.dao.UserDao;
 import com.wxq.domain.Role;
 import com.wxq.domain.User;
 import com.wxq.service.UserService;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
+@Transactional
 public class UserServiceImpl implements UserService {
 
     private UserDao userDao;

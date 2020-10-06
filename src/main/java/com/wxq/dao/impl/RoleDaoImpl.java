@@ -4,12 +4,11 @@ import com.wxq.dao.RoleDao;
 import com.wxq.domain.Role;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.transaction.annotation.Transactional;
 
 
 import java.util.List;
 
-@Transactional
+
 public class RoleDaoImpl implements RoleDao {
 
     private JdbcTemplate jdbcTemplate;
